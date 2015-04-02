@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="58dp">
+
+        <com.thehub.thehubandroid.CircleImageView
+            android:id="@+id/profPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            />
+
+
+        <!--<Button-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:id="@+id/hangoutButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="8dp"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:layout_toEndOf="@+id/profPic"-->
+            <!--android:layout_toRightOf="@+id/profPic"-->
+            <!--android:layout_below="@+id/displayName"-->
+            <!--android:text="Invite to Hang"-->
+            <!--android:background="#eee"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="20sp" />-->
+    </RelativeLayout>
+
+    <!-- Holder for ukey -->
+    <TextView
+        android:id="@+id/ukey"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|top">
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robbie Small"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/activityLevel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayName"
+            android:textColor="#343434"
+            android:textSize="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:focusable="false"
+            android:visibility="gone"
+            android:id="@+id/inviteFriendButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/invite_to_hang_icon"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    <!-- end holder -->
+
+
+</FrameLayout>
